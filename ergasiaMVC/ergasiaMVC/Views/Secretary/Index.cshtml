@@ -1,0 +1,29 @@
+﻿@model Secretary
+@{
+    ViewData["Title"] = "Secretary Home";
+}
+<h3>Secretary Data</h3>
+<table class="table table-bordered table-responsive table-hover">
+    <tr>
+        <th><strong>PhoneNumber</strong></th>
+        <th><strong>Username </strong></th>
+        <th><strong>Name</strong></th>
+        <th><strong>Surname</strong></th>
+        <th><strong>Department</strong></th>
+    </tr>
+    <tr>
+        <td>@Model.Phonenumber</td>
+        <td>@Model.USERS_username </td>
+        <td>@Model.Name</td>
+        <td>@Model.Surname</td>
+        <td>@Model.Department</td>
+    </tr>
+</table>
+
+<div style="text-align:center">
+    <a type="button" style="margin-right:20px" class="btn btn-primary" asp-action="AddCourseView" asp-route-department="@Model.Department" asp-route-username="@Model.USERS_username">Add a Course.</a>
+    <a type="button" style="margin-right:20px" class="btn btn-primary" asp-action="AddStudentView" asp-route-department="@Model.Department" asp-route-username="@Model.USERS_username">Add a Student.</a>
+    <a type="button" style="margin-right:20px" class="btn btn-primary" asp-action="AddProfessorView" asp-route-department="@Model.Department" asp-route-username="@Model.USERS_username">Add a Professor.</a>
+    <a type="button" class="btn btn-primary" asp-action="AssignCourseView" asp-route-department="@Model.Department" asp-route-username="@Model.USERS_username">Assign Course to student.</a>
+</div>
+<partial name="ShowCoursesView"></partial>

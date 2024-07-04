@@ -1,0 +1,119 @@
+﻿
+@section Stylesheets {
+<style>
+#custom_form
+{
+  display:none;
+}
+.mb-3{
+    margin-bottom: 10px;
+}
+.form-select{
+    margin-bottom: 10px;
+}
+</style>
+}
+@model ergasiaMVC.Models.CoursesToBeGradedViewModel
+@{
+    ViewData["Title"] = "Profesor";
+}
+<h3>Professor Data</h3>
+<table class="table table-bordered table-responsive table-hover">
+        <tr>
+            <th><strong>AFM</strong></th>
+            <th><strong>Username </strong></th>
+            <th></strong>Name</strong></th>
+            <th></strong>Surname</strong></th>
+            <th></strong>Department</strong></th>
+        </tr>
+    <tr>
+                <td>@ViewBag.professorData.AFM</td>
+                <td>@ViewBag.professorData.USERS_username </td>
+                <td>@ViewBag.professorData.Name</td>
+                <td>@ViewBag.professorData.Surname</td>
+                <td>@ViewBag.professorData.Department</td>
+    </tr>
+  </table>
+  <h3>Graded Courses</h3>
+  @if (ViewBag.userMessage!=null){
+    @if(ViewBag.userMessage=="Grade Added Successfully"){
+        <h5><font color=green>@ViewBag.userMessage</font></h5>
+    }else{
+        <h5><font color=red>@ViewBag.userMessage</font></h5>
+    }
+  }
+  <table id="table1" class="table table-bordered table-responsive table-hover">
+        <tr>
+            <th>Student</th>
+            <th>Course Title</th>
+            <th>Grade</th>
+            <th>Semester</th>
+        </tr>
+    @foreach (var element in @ViewBag.gradedCourses)
+    {
+    <tr>
+                <td>@element.studentRegNum</td>
+                <td>@element.course_title</td>
+                @if(@element.grade_value!=-1){
+                <td>@element.grade_value</td>
+                }else{
+                    <td>No grade yet</td>
+                }
+                <td>@element.semester</td>
+    </tr>
+        }
+</table>
+<center><button type="button" class="btn btn-primary" onclick="show_form()">Grade Student</button></center>
+<form method="post" action="AddStudentGrade" id="custom_form">
+    <div class="mb-3">
+        <label for="studentRegistrationNumber" class="form-label">Student Registration Number</label>
+        <input type="number" class="form-control" asp-for="studentRegNum" id="studentRegistrationNumber">
+    </div>
+    <label for="course">Choose course: </label>
+    <select class="form-select" name="course" id="course" onchange="SetValue()">
+    <option selected></option>
+    @foreach(Course course in ViewBag.professorCourses){
+    <option value=@course.CourseTitle id=@course.idCOURSE>Course Name: @course.CourseTitle ID: @course.idCOURSE</option>
+    }
+</select>
+      <div class="mb-3">
+        <label for="gradeValue" class="form-label">Grade Value</label>
+        <input type="number" class="form-control" asp-for="grade_value" id="gradeValue" min="0" max="10">
+    </div>
+        <input type="hidden" id="course_id_value" asp-for="course_id" value=""/>
+        <input type="hidden" name="Professor.AFM" value="@ViewBag.professorData.AFM"/>
+        <input type="hidden" name="Professor.USERS_username" value="@ViewBag.professorData.USERS_username"/>      
+        <input type="hidden" name="Professor.Name" value="@ViewBag.professorData.Name"/>      
+        <input type="hidden" name="Professor.Surname" value="@ViewBag.professorData.Surname"/>
+        <input type="hidden" name="Professor.Department" value="@ViewBag.professorData.Department"/>  
+    <button type="button" class="btn btn-primary" onclick="checkForNulls()">Save grade</button>
+    <button type="submit" style="visibility:hidden;" id="submitButton"></button>
+</form>
+
+<script>
+    function show_form() {
+    var item = document.getElementById("custom_form");
+    item.style.display = "block"; 
+    }
+
+    function SetValue()
+    {
+        var e = document.getElementById("course");
+        var id = e.options[e.selectedIndex].id;
+        var textBox= document.getElementById("course_id_value");
+        textBox.value= id;
+    }
+    function checkForNulls(){
+        var studentRegNum= document.getElementById("studentRegistrationNumber");
+        var course_id= document.getElementById("course_id_value");
+        var grade_value= document.getElementById("gradeValue");
+        var submitButton= document.getElementById("submitButton");
+        if(studentRegNum.value=="" || course_id.value=="" || grade_value.value==""){
+            alert("You have to fill in all fields before submitting");
+        }else{
+            submitButton.click();
+        }
+    }
+</script> 
+@{
+}

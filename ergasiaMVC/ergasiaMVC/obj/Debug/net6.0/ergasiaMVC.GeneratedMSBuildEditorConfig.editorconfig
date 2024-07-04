@@ -1,0 +1,77 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ergasiaMVC
+build_property.RootNamespace = ergasiaMVC
+build_property.ProjectDir = C:\Users\evriv\OneDrive\Desktop\Android Studio\Εργασία MVC\MVC_Project\ergasiaMVC\ergasiaMVC\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\evriv\OneDrive\Desktop\Android Studio\Εργασία MVC\MVC_Project\ergasiaMVC\ergasiaMVC
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/evriv/OneDrive/Desktop/Android Studio/Εργασία MVC/MVC_Project/ergasiaMVC/ergasiaMVC/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/evriv/OneDrive/Desktop/Android Studio/Εργασία MVC/MVC_Project/ergasiaMVC/ergasiaMVC/Views/Professor/ViewProfData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzc29yXFZpZXdQcm9mRGF0YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/evriv/OneDrive/Desktop/Android Studio/Εργασία MVC/MVC_Project/ergasiaMVC/ergasiaMVC/Views/Secretary/AddCourseView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VjcmV0YXJ5XEFkZENvdXJzZVZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/evriv/OneDrive/Desktop/Android Studio/Εργασία MVC/MVC_Project/ergasiaMVC/ergasiaMVC/Views/Secretary/AddProfessorView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VjcmV0YXJ5XEFkZFByb2Zlc3NvclZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/evriv/OneDrive/Desktop/Android Studio/Εργασία MVC/MVC_Project/ergasiaMVC/ergasiaMVC/Views/Secretary/AddStudentView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VjcmV0YXJ5XEFkZFN0dWRlbnRWaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/evriv/OneDrive/Desktop/Android Studio/Εργασία MVC/MVC_Project/ergasiaMVC/ergasiaMVC/Views/Secretary/AssignCourseView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VjcmV0YXJ5XEFzc2lnbkNvdXJzZVZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/evriv/OneDrive/Desktop/Android Studio/Εργασία MVC/MVC_Project/ergasiaMVC/ergasiaMVC/Views/Secretary/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VjcmV0YXJ5XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/evriv/OneDrive/Desktop/Android Studio/Εργασία MVC/MVC_Project/ergasiaMVC/ergasiaMVC/Views/Secretary/ShowCoursesView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VjcmV0YXJ5XFNob3dDb3Vyc2VzVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/evriv/OneDrive/Desktop/Android Studio/Εργασία MVC/MVC_Project/ergasiaMVC/ergasiaMVC/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/evriv/OneDrive/Desktop/Android Studio/Εργασία MVC/MVC_Project/ergasiaMVC/ergasiaMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/evriv/OneDrive/Desktop/Android Studio/Εργασία MVC/MVC_Project/ergasiaMVC/ergasiaMVC/Views/Student/ViewData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxWaWV3RGF0YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/evriv/OneDrive/Desktop/Android Studio/Εργασία MVC/MVC_Project/ergasiaMVC/ergasiaMVC/Views/User/AuthenticateView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxBdXRoZW50aWNhdGVWaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/evriv/OneDrive/Desktop/Android Studio/Εργασία MVC/MVC_Project/ergasiaMVC/ergasiaMVC/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/evriv/OneDrive/Desktop/Android Studio/Εργασία MVC/MVC_Project/ergasiaMVC/ergasiaMVC/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/evriv/OneDrive/Desktop/Android Studio/Εργασία MVC/MVC_Project/ergasiaMVC/ergasiaMVC/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-lkjdziol0z

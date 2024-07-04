@@ -1,0 +1,25 @@
+﻿@model ergasiaMVC.Models.AddCourseViewModel
+@{
+    ViewData["Title"] = "Add Course";
+}
+<h1>Add New Student for @Model.Department</h1>
+<form method="post" action="AddNewCourse">
+    <input type="text" asp-for="Department" value="@Model.Department" hidden/>
+    <input type="text" asp-for="secUsername" value="@Model.secUsername" hidden />
+    <div class="mb-3">
+        <label for="" class="form-label">Course Title</label>
+        <input type="text" class="form-control" asp-for="course.CourseTitle">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Course Semester</label>
+        <input type="number" max="99" class="form-control" asp-for="course.CourseSemester">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Professor's AFM</label>
+        <input type="number" class="form-control" asp-for="afm"/>
+    </div>
+    <button type="submit" class="btn btn-primary">Add Course!</button>
+</form>
+<br />
+<p style="color:red">@Model.message</p>
+<a type="button" style="margin-right:20px" class="btn btn-primary" asp-action="goBack" asp-route-username="@Model.secUsername">Go Back.</a>

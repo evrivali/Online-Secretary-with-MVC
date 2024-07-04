@@ -1,0 +1,19 @@
+﻿<h3>@Model.Department Courses</h3>
+<table class="table table-bordered table-responsive table-hover">
+    <tr>
+        <th><strong>Course ID</strong></th>
+        <th><strong>Course Title </strong></th>
+        <th><strong>Course Semester</strong></th>
+        <th><strong>Professor</strong></th>
+    </tr>
+    @foreach(Course course in ViewBag.CoursesDep)
+    {
+        <tr>
+            <td>@course.idCOURSE </td>
+            <td>@course.CourseTitle</td>
+            <td>@course.CourseSemester</td>
+            <td>@course.professor.Name @course.professor.Surname</td>
+        </tr>
+    }
+</table>
+

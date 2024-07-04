@@ -1,0 +1,38 @@
+﻿@model ergasiaMVC.Models.AddProfessorViewModel
+@{
+    ViewData["Title"] = "Add Professor";
+}
+<h1>Add New Professor for @Model.professor.Department</h1>
+<form method="post" action="AddNewProfessor">
+    <input type="text" asp-for="professor.Department" value="@Model.professor.Department" hidden />
+    <input type="text" asp-for="secUsername" value="@Model.secUsername" hidden />
+    <div class="mb-3">
+        <label for="" class="form-label">Username</label>
+        <input type="text" class="form-control" asp-for="professor.USERS_username">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Password</label>
+        <input type="password" class="form-control" asp-for="password">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Professor's AFM</label>
+        <input type="number" max="999999999" class="form-control" asp-for="professor.AFM">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Name</label>
+        <input type="text" class="form-control" asp-for="professor.Name">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Surname</label>
+        <input type="text" class="form-control" asp-for="professor.Surname">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Department</label>
+        <input type="text" class="form-control" asp-for="@Model.professor.Department" disabled>
+    </div>
+    <button type="submit" class="btn btn-primary">Add Professor!</button>
+</form>
+<br />
+<p style="color:red">@Model.message</p>
+<a type="button" style="margin-right:20px" class="btn btn-primary" asp-action="goBack" asp-route-username="@Model.secUsername">Go Back.</a>
+

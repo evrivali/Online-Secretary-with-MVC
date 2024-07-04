@@ -1,0 +1,20 @@
+﻿@model ergasiaMVC.Models.UserLoginViewModel
+@{
+    ViewData["Title"] = "LogIn";
+}
+<h1>Log in Page</h1>
+<form method="post" action="Authenticate">
+    <h3>Fill in your username</h3>
+    <div class="mb-3">
+        <label for="" class="form-label">Username</label>
+        <input type="text" class="form-control" asp-for="username">
+    </div>
+    <h3>Fill in your password</h3>
+    <div class="mb-3">
+        <label for="" class="form-label">Password</label>
+        <input type="password" class="form-control" asp-for="password">
+    </div>
+    <button type="submit" class="btn btn-primary">Log in</button>
+</form>
+<br />
+<p style="color:red">@ViewBag.error</p>
